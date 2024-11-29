@@ -15,10 +15,10 @@ public class DetailProductScreen extends AppiumBase {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @FindBy(id = "com.banggood.client:id/tv_product_name")
+    @FindBy(xpath = "//android.widget.TextView[@resource-id=\"com.banggood.client:id/tv_product_name\"]")
     private WebElement name;
 
-    @FindBy(id = "com.banggood.client:id/tv_tag")
+    @FindBy(xpath = "//android.widget.TextView[@resource-id=\"com.banggood.client:id/tv_tag\"]")
     private WebElement iconCOD;
 
     @FindBy(id = "com.banggood.client:id/tv_product_price")

@@ -58,6 +58,7 @@ public class HomeScreen extends AppiumBase {
     }
 
     public void  chooseProduct(){
+        swipeUntilElementIsDisplayed(driver , "mid_to_top" , chooseProduct) ;
         wait.until(ExpectedConditions.visibilityOf(chooseProduct));
         chooseProduct.click();
     }
